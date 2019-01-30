@@ -1,0 +1,26 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{title}}</h1>
+   <h2> <p class="lead">A place to share good movies.</p></h2>
+   </div>
+</div>
+
+<div class="btn-group btn-group-toggle" data-toggle="buttons" style="color: rgba(7, 24, 87, 0.616)">
+  <label  routerLinkActive="active"class="btn btn-secondary">
+    <input type="radio" name="home" id="home" autocomplete="off" 
+    (click)="backToHome()"> Home
+  </label>
+  <label  class="btn btn-secondary ">
+         <input type="radio" name="yourMovie" id="yourMovie" autocomplete="off" 
+               (click)="setListTo()">  Your Movies
+    </label>
+    <label routerLink="/alllist" routerLinkActive="active" class="btn btn-secondary">
+      <input type="radio" name="movies" id="movies" autocomplete="off"
+      (click)="setListToAll()"> All Movies
+    </label>
+    <form class="form-inline my-2 my-lg-0" style="margin:0 auto;" >
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+  <router-outlet></router-outlet>

@@ -1,0 +1,39 @@
+<div class="alert alert-primary" role="alert" >
+    <h2>Add a new review here : </h2>
+  </div>
+
+<div class="input-group mb-3" style="width: 50rem; margin-left: auto;
+margin-right: auto;" >
+    <div class="input-group-prepend" style="width: 50rem; margin-left: auto;
+    margin-right: auto;" >
+      <span class="input-group-text" id="inputGroup-sizing-default"><h4>Film Name :</h4></span>
+    </div>
+    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+    [(ngModel)]="newFilmName">
+  </div>
+
+  <div class="input-group input-group-lg" style="width: 50rem; margin-left: auto;
+margin-right: auto;" >
+    <div class="input-group-prepend" style="width: 50rem; margin-left: auto;
+    margin-right: auto;" >
+      <span class="input-group-text" id="inputGroup-sizing-default"><h4>Review Content :</h4></span>
+    </div>
+    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+    [(ngModel)]="newContent">
+  </div>
+
+  <div class="input-group mb-3" style="width: 50rem; margin-left: auto;
+  margin-right: auto;" >
+      <div class="input-group-prepend" style="width: 50rem; margin-left: auto;
+      margin-right: auto;" >
+        <span class="input-group-text" id="inputGroup-sizing-default"><h4> Score (1-5):</h4></span>
+      </div>
+      <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+      [(ngModel)]="newNote">
+    </div>
+    <br>
+    <div style="margin:0 auto;width:200px;">
+        <button routerLink="/alllist" routerLinkActive="active"type="button" class="btn btn-info" (click) = "addItem()" 
+       > publish! </button>
+        </div>
+    <br>

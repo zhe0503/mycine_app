@@ -1,0 +1,30 @@
+
+<router-outlet></router-outlet>
+
+   <h2> <p class="lead">Welcom to MyCine, please login.</p></h2>
+<div class="input-group flex-nowrap" style="margin:0 auto;width:200px;">
+  <div class="input-group-prepend" style="margin:0 auto;width:200px;">
+  <span class="input-group-text" id="addon-wrapping">Your Name :</span>
+  </div>
+  <input type="text" class="form-control" placeholder="Username" 
+  aria-label="Username" aria-describedby="addon-wrapping"
+  [(ngModel)]="userService.userName"/><br>
+  </div>
+  <div class="input-group flex-nowrap" style="margin:0 auto;width:200px;">
+  <div class="input-group-prepend" style="margin:0 auto;width:200px;">
+  <span class="input-group-text" id="addon-wrapping">Your Email :</span>
+  </div>
+  <input type="text" class="form-control" placeholder="UserEmail" 
+  aria-label="UserEmail" aria-describedby="addon-wrapping"
+  [(ngModel)]="userService.userEmail"/><br>
+  </div>
+
+  <div style="margin:0 auto;width:200px;">
+  <button type="button" class="btn btn-info" (click) = "onCreateUser()" 
+  > GO! </button>
+  </div>
+  <br>
+  <br>
+
+
+  
