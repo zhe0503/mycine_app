@@ -11,14 +11,15 @@ import { MyListComponent } from './my-list/my-list.component';
 import { AllListComponent } from './all-list/all-list.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BaseItemComponent } from './base-item/base-item.component';
-
+import { RegisterComponent } from './register/register.component';
+import { HttpClient,HttpClientModule }    from '@angular/common/http';
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'mylist', component:  MyListComponent},
   { path: 'alllist', component: AllListComponent},
   { path: 'profile', component: ProfileComponent},
-
+  { path: 'register', component: RegisterComponent},
   ];
 @NgModule({
   declarations: [
@@ -30,15 +31,20 @@ const appRoutes: Routes = [
     AllListComponent,
     ProfileComponent,
     BaseItemComponent,
+    RegisterComponent,
+    
   ],
   imports: [
+    
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

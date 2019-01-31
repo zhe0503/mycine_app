@@ -3,7 +3,7 @@ import {Item}from "../item"
 import{ItemService} from "../item.service"
 import { Router } from '@angular/router';
 import {UserService} from "../user.service";
-
+import { HttpClient,HttpClientModule }    from '@angular/common/http';
 
 @Component({
   selector: 'app-my-list',

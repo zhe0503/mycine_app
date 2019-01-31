@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {UserService} from "../user.service";
 import { Router } from '@angular/router';
+import { HttpClient,HttpClientModule }    from '@angular/common/http';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -25,5 +26,13 @@ export class LoginComponent implements OnInit {
   
   }
 
+  checkUser(){
+    
+  }
 
+  // new mehode login
+  // call service getUsers
+  // map lists users 
+  // check if email exist 
+  // then if passzord send equals password in db 
 }

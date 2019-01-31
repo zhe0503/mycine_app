@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import{ItemService} from "../item.service"
 import{Item}from "../item"
+import { HttpClient,HttpClientModule }    from '@angular/common/http';
 
 @Component({
   selector: 'app-all-list',
